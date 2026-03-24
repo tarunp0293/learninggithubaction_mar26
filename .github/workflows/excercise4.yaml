@@ -1,0 +1,13 @@
+name: exercise-4
+
+on:
+    pull_request:
+        branches:
+            - dev
+
+jobs:
+    exercise4:
+        runs-on: ubuntu-latest
+        steps:
+            - name: message
+              run: "echo thanks for pull request"
